@@ -1,0 +1,65 @@
+@charset "gb2312";
+.container {background: rgb(229, 229, 229,0.6);overflow: hidden; width: 1000px; margin: auto; border-left: #d2d2d2 1px solid; border-right: #d2d2d2 1px solid; }
+.blank20 { height: 20px; width: 100%; overflow: hidden; }
+/*卷轴*/
+.jztop { background: url(../images/maintopbg.jpg) no-repeat; width: 1034px; margin: auto; height: 14px; }
+.jzend { background: url(../images/mainendbg.jpg) no-repeat; width: 1034px; margin: auto; height: 14px; }
+/*文章*/
+.bloglist { width: 620px; overflow: hidden; margin-left: 20px; margin-bottom: 20px; }
+.newblogs { background: #fff; overflow: hidden; width: 68%; float: left; }
+h3.blogtitle { line-height: 30px; height: 30px; margin: 10px 0; }
+.blogtitle span { background: #333; padding: 2px 5px; font-size: 14px; color: #FFF; border-radius: 2px; position: relative; margin-right: 20px }
+.blogtitle span a { color: #FFF }
+.blogtitle span:after { content: ""; width: 0px; height: 0px; border-top-width: 6px; border-top-style: solid; border-top-color: transparent; border-left-width: 6px; border-left-style: solid; border-left-color: #333; border-bottom-width: 6px; border-bottom-style: solid; border-bottom-color: transparent; margin: 0px; padding: 0px; position: absolute; right: -6px; top: 6px }
+.blogpic { overflow: hidden; width: 30%; height: 100px; display: block; float: left; margin-right: 20px; background: #333; }
+.bloglist ul { overflow: hidden }
+.bloglist li { border-bottom: #ccc 1px solid; margin-bottom: 10px; overflow: hidden; }
+.bloglist li img{}
+.bloglist li:hover img{-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); -ms-transform: scale(1.1);}
+.autor { width: 100%; overflow: hidden; clear: both; margin: 20px 0 0 0; display: inline-block; color: #838383; font-size: 12px }
+.autor span { margin: 0 10px 0 0; padding-left: 20px }
+.autor span a { color: #333; }
+.autor span a:hover { text-decoration: underline }
+.dtime { background: url(../images/posttime.gif) no-repeat left center }
+.viewnum { background: url(../images/newsbg04.png) no-repeat left center }
+.blogpic img { width: 100%;-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;  }
+.bloginfo p { color: #888; line-height: 24px; }
+.more { font-size: 14px; }
+.r_box { width: 300px; margin: 20px 20px 0 0 }
+.tit { line-height: 44px; color: #fff; font-size: 18px; height: 44px; background: url(../images/rtitbg.png) no-repeat; padding-left: 40px; margin: 0 0 10px 0 }
+/* 关注我 */
+.gzwm ul { width: 100%; overflow: hidden; }
+.gzwm li { width: 60px; margin: 0 10px 0 5px; float: left; }
+.gzwm li a { color: #747F8C; width: 62px; text-align: center; padding-top: 60px; float: left; }
+.gzwm .email { background: url(../images/gz01.png) no-repeat; }
+.gzwm .qq { background: url(../images/gz02.png) no-repeat; }
+.gzwm .tel { background: url(../images/gz03.png) no-repeat; }
+.gzwm .prize { background: url(../images/gz04.png) no-repeat; }
+.gzwm li a:hover { opacity: 0.6; }
+/*图文列表*/
+.tuwen { width: 100%; clear: both; overflow: hidden; margin: 20px 0 }
+.tuwen li { overflow: hidden; clear: both; margin-bottom: 10px }
+.tuwen li i{width: 70px; float: left; margin-right: 15px; overflow:hidden}
+.tuwen li img { width:100% ;-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s; }
+.tuwen li b { overflow: hidden; width: 100%; font-weight: normal; color: #333; font-size: 14px; line-height: 30px }
+.tuwen li span { color: #999; margin-right: 10px }
+.tuwen p { margin-top: 5px }
+.tulanmu { background: url(../images/lanmbq.png) no-repeat center left; padding-left: 17px }
+.tulanmu a { color: #999; }
+.tulanmu a:hover { color: #066 }
+.tutime { background: url(../images/datepng.png) no-repeat left center; padding-left: 15px }
+.tuwen li:hover { background: #fff }
+.tuwen li:hover img{-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); -ms-transform: scale(1.1);}
+/*排行*/
+.rank li { height: 26px; line-height: 26px; clear: both;  overflow: hidden; padding-left: 15px; background: url(../images/libg.jpg) no-repeat left center; }
+.rank { margin: 10px 0 }
+.rank li a { color: #333; }
+.rank li:first-child a { color: #f00; display: block; }
+.ph { overflow: hidden }
+/*首页右侧广告 300*/
+.ad { width: 300px; overflow: hidden; margin: 30px 0 }
+.ad img { width: 300px; }

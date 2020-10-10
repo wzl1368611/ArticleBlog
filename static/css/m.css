@@ -1,0 +1,82 @@
+ @charset "gb2312";
+
+/* 大于960px，小于1199px */ 
+ @media screen and (min-width: 960px) and (max-width: 1199px) {
+header, article, .footer, .container, .contenttop { width: 100%; margin: auto;  }
+.contenttop { overflow: hidden }
+.logo { padding: 20px 0 20px 20px; }
+.footer .f_l, .footer .f_r { float: none; text-align: center }
+.container { padding: 20px; width: auto; margin: 0 10px }
+.blogpic { background: none }
+.jztop, .jzend { background-size: 100% 100%; width: 100%; }
+.bloglist { width: 60% }
+.con_content { width: 100% }
+footer { width: 100% }
+}
+ 
+ /* 大于768px，小于959px */ 
+ @media screen and (min-width: 768px) and (max-width: 959px) {
+header, article, .footer, .container, .contenttop { width: 100%; margin: auto; }
+
+.logo { padding: 20px 0 20px 20px; }
+.footer .f_l, .footer .f_r { float: none; text-align: center }
+.container { padding: 20px; width: auto; margin: 0 10px }
+.blogpic { background: none }
+.jztop, .jzend { background-size: 100% 100%; width: 100%; }
+.bloglist { width: 55% }
+.r_box { width: 36% }
+.blogtitle { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.con_content { width: 100% }
+.lispic li { margin: 0 5px 5px 0 }
+footer { width: 100% }
+}
+ 
+ 
+/* 大于480px，小于767px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+header, article, .footer, .container, .bloglist, .contenttop { width: 100%; margin: auto;}
+.navigation { display: none }
+.contenttop { height: 60px; overflow: hidden }
+.logo { padding: 20px 0 20px 20px; }
+.blogtitle { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.footer .f_l, .footer .f_r { float: none; text-align: center }
+.container { padding: 20px; width: auto; margin: 0 10px }
+.blogpic { background: none }
+.jztop, .jzend { background-size: 100% 100%; width: 100%; }
+#mnav { display: block; z-index: 99999; }
+.search { display: none }
+.r_box { width: 100%; margin: 0 }
+.con_content { width: 100% }
+.xwpic { width: 100% }
+.dtxw li::before { display: none }
+.dttext { margin-left: 0 }
+.dttext ul { display: block; width: 100%; padding: 0 0 0 0 }
+.dttext h2 { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.nh1 span { display: none }
+.lispic li { width: 90% }
+footer { width: 100% }
+}
+/* 小于479px */
+@media only screen and (max-width: 479px) {
+header, article, .footer, .container, .bloglist, .contenttop { width: 100%; margin: auto;  }
+.navigation { display: none }
+.contenttop { height: 60px; overflow: hidden }
+.logo { padding: 20px 0 20px 20px; }
+.blogtitle { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.footer .f_l, .footer .f_r { float: none; text-align: center }
+.container { padding: 20px; width: auto; margin: 0 10px }
+.blogpic { background: none }
+.jztop, .jzend { background-size: 100% 100%; width: 100%; }
+#mnav { display: block; z-index: 99999; }
+.search { display: none }
+.r_box { width: 100%; margin: 0 }
+.con_content { width: 100% }
+.xwpic { width: 100% }
+.dtxw li::before { display: none }
+.dttext { margin-left: 0 }
+.dttext ul { display: block; width: 100%; padding: 0 0 0 0 }
+.dttext h2 { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.nh1 span { display: none }
+.lispic li { width: 90% }
+footer { width: 100% }
+}

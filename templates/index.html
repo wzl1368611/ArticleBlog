@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block style %}
+.line-limit-length{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; //文本不换行，这样超出一行的部分被截取，显示...
+}
+{% endblock %}
+{% block content %}
+    <div class="container">
+    <div class="bloglist f_l">
+
+     <ul>
+    {% for first in first_10 %}
+     <li>
+        <h3 class="blogtitle"><span><a href="/article/{{ first.id }}" title="css3" target="_blank" class="classname">{{ first.types.name }}</a></span><a href="/article/{{ first.id }}" target="_blank">{{ first.title }}</a></h3>
+        <div class="bloginfo"><span class="blogpic"><a href="/article/{{ first.id }}" title={{ first.title }}><img src="/static/{{ first.picture }}" alt={{ first.title }}></a></span>
+          <p style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap">{{ first.description |safe }}</p>
+        </div>
+        <div class="autor"><span class="lm f_l"></span><span class="dtime f_l">{{ first.time }}</span><span class="viewnum f_l">浏览（<a href="/">1429</a>）</span><span class="f_r"><a href="/article/{{ first.id }}" class="more">阅读原文&gt;&gt;</a></span></div>
+
+      </li>
+    {% endfor %}
+
+    </ul>
+
+
+
+    </div>
+    <div class="r_box f_r">
+      <div class="tit01">
+        <h3 class="tit">关注我</h3>
+        <div class="gzwm">
+          <ul>
+            <li><a class="email" href="#" target="_blank">我的电话</a></li>
+            <li><a class="qq" href="#mailto:admin@admin.com" target="_blank">我的邮箱</a></li>
+            <li><a class="tel" href="#" target="_blank">我的QQ</a></li>
+            <li><a class="prize" href="#">个人奖项</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--tit01 end-->
+
+      <div class="tuwen">
+        <h3 class="tit">图文推荐</h3>
+        <ul>
+            {% for tui in tui_7 %}
+          <li><a href="/article/{{ tui.id }}"><i><img src="/static/{{ tui.picture }}"></i><b>{{ tui.title }}</b></a>
+            <p><span class="tulanmu"><a href="/article/{{ tui.id }}/">{{ tui.types.name }}</a></span><span class="tutime">{{ tui.time }}</span></p>
+          </li>
+            {% endfor %}
+
+        </ul>
+      </div>
+      <div class="ph">
+        <h3 class="tit">点击排行</h3>
+        <ul class="rank">
+            {% for click in click_12 %}
+          <li><a href="/article/{{ click.id }}" title="【{{ click.types.name }}】{{ click.title }}" target="_blank">【{{ click.types.name }}】{{ click.title }}</a></li></ul>
+            {% endfor %}
+      </div>
+      <div class="ad"> <img src="/static/images/03.jpg"> </div>
+    </div>
+  </div>
+{% endblock %}
